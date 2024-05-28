@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import ExcelReader from './excel_2'
+import React from 'react';
 
-function App() {
+const addresses = [
+  { location: { lat: 32.080885, lng: 34.831110 }, name: 'Address 1' },
+  { location: { lat: 32.080463894918765, lng: 34.831750562612 }, name: 'Address 2' },
+  { location: { lat: 32.07416267185252, lng: 34.83595177240108 }, name: 'Address 3' },
+  { location: { lat: 32.07716175232864, lng: 34.83634527660597 }, name: 'Address 4' },
+  // Add more addresses as needed
+];
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ExcelReader />,
     </div>
+
   );
 }
 
 export default App;
+
+
+
+
